@@ -1,0 +1,7 @@
+/* 
+    *** Recebendo dados de um Formulario ***
+        #>> para pegar esses dados usa-se as variaveis globais:
+            - $_POST['nameDataForm'];
+            - $_GET['nameDataForm'];
+        
+*/ 

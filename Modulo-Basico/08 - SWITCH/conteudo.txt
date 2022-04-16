@@ -1,0 +1,20 @@
+/* 
+    *** Multiplos Arquivos PHP ***
+        #>> action="recebedor.php" |> Dentro do form
+
+        #>> require
+            //*** vai incluir o arquivo 'recebedor' a esse
+
+            //? mas se der erro, vai parar a aplicação
+            require "recebedor.php";
+
+            //? existe o require_once |> só inclui o arquivo uma vez;
+
+        #>> include
+            //*** vai incluir o arquivo 'recebedor' a esse
+            
+            //? mas se der erro, não vai parar a aplicação 
+            ¬ mas só exibe uma mensagem de aviso simples;   
+            include "recebedor.php";
+        
+*/ 

@@ -1,0 +1,4 @@
+/* 
+    *** Encode ***
+        #>> É o tipo de codificação de caracteres que estará sendo usado;
+*/ 

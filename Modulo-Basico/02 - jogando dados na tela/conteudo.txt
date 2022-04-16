@@ -1,0 +1,6 @@
+/* 
+    *** Jogando dados na tela  ***
+    #> para exibir dados na tela pode se usar o comando 'echo'
+    #> vai server como 'print' mas com ele pode se mostrar textos simples, variaveis (ou seja, seu conteudo ou nome), 
+    tags HTML, etc...;
+*/

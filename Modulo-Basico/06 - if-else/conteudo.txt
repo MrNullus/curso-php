@@ -1,0 +1,15 @@
+/* 
+    *** if-else ***
+        #>> Sintaxe:
+
+            if (condicion) {
+                // code...
+            } else {
+                // code...
+            }
+
+        #>> Usando operadores Lógicos:
+            - && (e)
+            - || (ou)
+        
+*/ 

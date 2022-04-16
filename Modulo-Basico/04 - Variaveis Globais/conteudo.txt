@@ -1,0 +1,6 @@
+/* 
+    *** Variaveis Globais ***
+        #>> São variaveis que o PHP já tem "embutidas"
+        #>> Normalmente variaveis compostas começam com "_" (underline)
+        #>> exemplo: $_SERVER, $_GET,$_POST
+*/ 

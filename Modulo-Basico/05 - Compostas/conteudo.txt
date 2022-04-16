@@ -1,0 +1,14 @@
+/* 
+    *** Constantes ***
+        #>> São variaveis que imutaveis
+
+        #>> Para definilas é preciso usar:
+            + a função "define"
+            +> exemplo |> define("nameConst", ""value for const)
+
+        #>> Cria-se constantes em uppercase (maiuscula)
+
+        #>> Para usar consts NÃO pode-se usar "$" (cifrão)
+            + É só invocar ela usando apenas o nome
+            +> exemplo |> echo "Usando consts: ". nameConst // note que não usei $
+*/ 

@@ -1,0 +1,9 @@
+/* 
+    *** Tipos de variaveis  ***
+    #> existe 4 tipos de variaveis no PHP:
+        + string; 
+        + integer; 
+        + float; 
+        + boolean; 
+        + array;
+*/

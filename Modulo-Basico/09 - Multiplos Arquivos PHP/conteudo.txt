@@ -1,0 +1,21 @@
+/* 
+    *** switch ***
+        #>> Serve como if só que apenas como comparação;
+        #>> Sintaxe:
+            $var = 0;
+
+            switch($var) {
+                case 'value1':
+                    # code
+                    break; // sempre deve ter
+
+                case 'value2':
+                    # code
+                    break;
+
+                default: // vai ocorrer como ultima opção (como o else)
+                    # code
+                    break;
+            }
+        
+*/ 

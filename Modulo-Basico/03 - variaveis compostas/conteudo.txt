@@ -1,0 +1,22 @@
+/* 
+    *** Variaveis Compostas ***
+    #>> Arrays:
+        #>> Para fazer isso devese usar de modo literal, ou seja:
+            $array_name = array('value1', 'value2');
+
+    #>> Arrays Refenciais:
+        #>> São arrays que possuem 'key' (chave) e 'value' (valor) ;
+        #>> ou seja:
+            $array_name = array(
+                'key1' => 'value1', 
+                'key2' => 'value2'
+            );
+
+        #>> Pegar valor com dotção de colchetes:
+            $array_name['key']; // |> return 'value1'
+
+        #>> Mudar valor com dotção de colchetes:
+            $array_name['key'] = 'new value from key';
+
+    ! Para mostrar todo o array suas keys e values, usa-se: print_r($array_name) !
+*/ 
