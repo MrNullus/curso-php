@@ -1,0 +1,8 @@
+/* 
+    *** While ***
+    #> Sintaxe:
+
+        while (condicion) {
+            # code...
+        }
+*/

@@ -1,0 +1,55 @@
+"*":
+  "Chromo-Color-Previews": {}
+  "atom-beautify":
+    general:
+      _analyticsUserId: "403cbc34-6492-4a5b-9fad-53c17bd24e39"
+    html:
+      indent_inner_html: true
+  "atom-material-ui":
+    colors:
+      genAccent: true
+      paintCursor: true
+      predefinedColor: "Blue Grey"
+    ui: {}
+  autosave:
+    enabled: true
+  "chrome-color-picker":
+    General:
+      autoColorNames: true
+      autoSetColor: true
+  "color-picker": {}
+  core:
+    allowPendingPaneItems: false
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "one-dark-material-syntax"
+    ]
+    uriHandlerRegistration: "never"
+  editor:
+    fontFamily: "Menlo, Consolas, DejaVu Sans Mono, monospace, Fira Code"
+    fontSize: 12
+    invisibles:
+      cr: " "
+      eol: " "
+    lineHeight: 1.7
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "00614a48-66d6-41e8-9698-8fa5a25bafbf"
+  firacode:
+    fontWeight: "medium"
+  "linter-ui-default": {}
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
+    displayMinimapOnLeft: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      showInStatusBar: true
+    useEslint: true
+    useStylelint: true
+  welcome:
+    showOnStartup: false
