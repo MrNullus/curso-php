@@ -15,10 +15,10 @@
     }
 
     class Post {
-        private titutlo;
-        private data;
-        private corpo;
-        private comentarios;
+        private $titutlo;
+        private $data;
+        private $corpo;
+        private $comentarios;
     }
 
     $cachorro = new Cachorro();
