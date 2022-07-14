@@ -1,0 +1,261 @@
+a {
+	text-decoration: none;
+}
+
+body {
+	min-height: 100vh;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1pt;
+}
+
+header {
+	margin-bottom: 2rem;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.56rem 0;
+}
+
+h1 {
+	color: #FF3657;	
+	font-size: 2rem;
+}
+
+.sr-only {
+	display: none;
+}
+
+.app-toolbar {
+	padding: 0.15rem 0.86rem;
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.btn {
+	background: transparent;
+    border: 2px solid black;
+    padding: 0.85rem;
+    border-radius: 4px;
+    color: #111;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+.btn:hover {
+	transition: all 0.25s ease-in-out;
+	background: black;
+	color: #fff;
+	border-color: #fff;
+}
+.btn-danger {
+	background: #fff;
+	color: #111;
+}
+.btn-danger:hover {
+	background: #FF2E50;
+}
+.btn-send-message{
+	font-size: 1.2rem;
+}
+.btn-delete-message {
+	padding: 0.32rem 0.39rem;
+	color: #FF2E50;
+}
+.btn-delete-message:hover {
+	color: #FF2E50;	
+}
+
+.app-form {
+	padding: 0 0.45rem;
+}
+
+.app-form form{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex: 1;
+	gap: 0.5rem;
+}
+
+.app-form form textarea {
+	flex-basis: 78%;
+	height: 50px;
+	resize: none;
+	padding: 0.65rem;
+	font-size: 0.97rem;
+	font-weight: 500;
+	letter-spacing: 1pt;
+	border: 2px solid #000;
+	border-radius: 4px;
+}
+	
+.app__visual {
+	padding: 1rem 3rem;
+	height: 900px;
+	overflow-y: scroll;
+	margin: 1rem 0;
+}
+
+.cssarrow {
+	position: relative;
+	background: #FFf;
+	border: 3px solid #000000;
+	width: 390px;
+	max-height: auto;
+	padding: 18px;
+	text-indent: 12pt;
+	border-radius: 6px;
+	color: #000;
+	clear: both;
+}
+.cssarrow:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+.cssarrow:after,
+.cssarrow:before {
+	right: 90%;
+    top: 0;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.cssarrow:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #FF3657;
+	border-width: 21px;
+	margin-top: 0px;
+}
+.cssarrow:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-right-color: #000000;
+	border-width: 25px;
+	margin-top: -4px;
+}
+
+.message_user {
+	background: #FFf;
+	float: right;
+}
+.message_user:after {
+	content: " 💩 ";
+}
+
+.message_outer_user {
+	/*background: #352E2E;*/
+	float: left;
+}
+.message_outer_user:after,
+.message_outer_user:before {
+	right: 92%;
+    top: 0;
+    transform:  rotate(180deg);
+	top: 0;
+}
+.message_outer_user:after {
+	content: " ";	
+}
+
+.message_user:after,
+.message_user:before {
+	right: -12%;
+    top: 0;
+    transform: translate(-90%, -8%);
+	top: 0;
+}
+
+.text-message {
+	line-height: 0.6cm;
+	word-break: break-all;
+}
+
+main {
+	min-height: 100vh;
+}
+
+
+.app-form.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.app-form.login form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2rem;
+	color: #FF3657;
+	background: #000;
+	padding: 2rem 1rem;
+	max-width: 34%;
+}
+
+@media (max-width: 720px) {
+	.app-form.login form {
+		max-width: 89%;		
+	}
+}
+
+.title-form {
+	font-size: 1.7rem;
+	color: #fff;
+	font-weight: 600;
+}
+
+.input-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-field label {
+	padding: 0.35rem 0;
+	font-size: 1.2rem;
+}
+
+.input-field input {
+	height: 30px;
+	padding: 0.35rem 0.45rem;
+	font-size: 1.2rem;
+	outline: none;
+}
+
+.btn-login {
+	color: #FF3657;
+	border-color: #FF3657;
+	font-size: 1rem;
+}
+.btn-our-login {
+	color: #ffF;
+	border-color: #ffF;
+	font-size: 1rem;
+}
+.btn-login:hover {
+	color: #FF3657;
+	border-color: #FF3657;
+}
+.btn-login:hover,
+.btn-our-login:hover {
+	opacity: 0.8!important;
+}
+
+
+footer {
+	margin-top: 1rem;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h4 {
+	color: #FF3657;	
+	font-size: 1.4rem;
+}
