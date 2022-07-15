@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-       <h1>ζ Holly Shit ζ</h1> 
+       <h1>ζ Holly Shit ζ</h1>
 		<h3>Se cadastre já e mande um grande Holly Shit!</h3>
 	</header>
 
 	<main>
-		<div class="app-form login"> 
+		<div class="app-form login">
 			<form method="post" action="cadastroUser.php">
 				<div class="title-form">Cadastro</div>
 
@@ -29,7 +29,7 @@
 
 				<div class="input-field">
 					<label for="password">Password</label>
-					<input type="password" name="password" id="password" />	
+					<input type="password" name="password" id="password" />
 				</div>
 
 				<button type="submit" class="btn btn-login">Sig Up</button>

@@ -17,12 +17,11 @@ if (isset($_POST['nickname']) && !empty($_POST['nickname'])) {
 	
 	// verificar se houve resultado e enviar para o index
 	if ($sql->rowCount() > 0) {
-		$aux = $sql->fetchAll();
-		$data = $aux[0];
-		print_r($data);
+		$data = $sql->fetchAll();
 
 		// setar SESSION e mandar para o index
-		$_SESSION['logged'] = $data;
+		$_SESSION['logged'] = $data[0];
+		print_r($_SESSION['logged']);
 		header("Location: index.php");
 		exit;
 	}

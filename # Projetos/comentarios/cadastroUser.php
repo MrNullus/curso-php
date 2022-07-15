@@ -30,7 +30,7 @@ if (isset($_POST['nickname']) && !empty($_POST['nickname'])) {
 		$data = $sql->fetch();
 
 		// setar SESSION e madar para o index
-		$_SESSION['logged'] = $data['id'];
+		$_SESSION['logged'] = $data;
 		header("Location: index.php");
 		exit;
 	}
