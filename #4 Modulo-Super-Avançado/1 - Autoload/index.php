@@ -24,10 +24,13 @@ define("URL_CLASS", "./class/");
 define("EXTENSION_CLASS", '.class.php');
 
 spl_autoload_register(function($class) {
-    if (file_exists(URL_CLASS.$class.EXTENSION_CLASS)) {
-        require_once(URL_CLASS.$class.EXTENSION_CLASS);
+    if (file_exists("./".$class.EXTENSION_CLASS)) {
+        require_once("./".$class.EXTENSION_CLASS);
+    } elseif (file_exists("../class/".$class.EXTENSION_CLASS)) {
+        require_once("../class/".$class.EXTENSION_CLASS);
     }
 });
+
 
 $obj = new Bola();
 $obj->setCor("#64454");
