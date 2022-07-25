@@ -22,12 +22,13 @@ if (isset($_POST['nickname']) && !empty($_POST['nickname'])) {
 	// verificar cadastro e enviar o user para o index
 	if ($sql->rowCount() > 0) {
 		// fazer consulta no bd
-		$sql = "SELECT id FROM usuarios WHERE nickname = :nickname AND password = :password";
+		$sql = "SELECT id, nickname FROM usuarios WHERE nickname = :nickname AND password = :password";
 		$sql = $pdo->prepare($sql);
 		$sql->bindValue(":nickname", $nickname);
 		$sql->bindValue(":password", $password);
 		$sql->execute();
-		$data = $sql->fetch();
+		$data = $sql->fetchAll();
+		$data = array_unique($data[0]);
 
 		// setar SESSION e madar para o index
 		$_SESSION['logged'] = $data;

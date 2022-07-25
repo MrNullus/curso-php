@@ -48,7 +48,7 @@ if (!isset($_SESSION['logged'])) {
 
             // verificar se existem mensagens
             if ($sql->rowCount() > 0) {
-                $nickname = $data["nickname"];
+                $nickname = $data['nickname'];
 
                 // exibir mensagens
                 foreach ($sql->fetchAll() as $menssage) { ?>

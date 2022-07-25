@@ -1,21 +1,20 @@
 /* 
-    *** switch ***
-        #>> Serve como if só que apenas como comparação;
-        #>> Sintaxe:
-            $var = 0;
+    *** Multiplos Arquivos PHP ***
+        #>> action="recebedor.php" |> Dentro do form
 
-            switch($var) {
-                case 'value1':
-                    # code
-                    break; // sempre deve ter
+        #>> require
+            //*** vai incluir o arquivo 'recebedor' a esse
 
-                case 'value2':
-                    # code
-                    break;
+            //? mas se der erro, vai parar a aplicação
+            require "recebedor.php";
 
-                default: // vai ocorrer como ultima opção (como o else)
-                    # code
-                    break;
-            }
+            //? existe o require_once |> só inclui o arquivo uma vez;
+
+        #>> include
+            //*** vai incluir o arquivo 'recebedor' a esse
+            
+            //? mas se der erro, não vai parar a aplicação 
+            ¬ mas só exibe uma mensagem de aviso simples;   
+            include "recebedor.php";
         
 */ 

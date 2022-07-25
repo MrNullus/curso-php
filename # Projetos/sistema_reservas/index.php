@@ -1,3 +1,17 @@
+<style>
+	th { background: #AE1BFA; border-radius: 4px; color: #fff; }
+	td { padding: 1.2rem 1rem; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); border-radius: 4px; }
+	.one-day { color: #121212; font-weight: 600; }
+	.td__one-day { background: #f1f1f1; }
+	.td_common-day { background: #fcfbfb;  }
+	.wrapper {
+		display: flex;		
+		flex-flow: column wrap;
+	}
+	.wrapper.show-modal { display: none!important; }
+</style>
+<script src="./assets/main.js"></script>
+
 <?php  
 // @ Configs Initial @
 require 'dependencies.php';
@@ -11,6 +25,13 @@ $list_cars = $cars->getCars();
 
 [<a href="reserv.php">Adicionar Reserva</a>]
 <br><br>
+
+<button id="btn-show-modal-cars">
+	Carros
+</button>
+<br><br>
+
+<div class="wrapper">
 
 <form method="GET">
 	<select name="ano" id="ano">
@@ -51,8 +72,6 @@ $list_cars = $cars->getCars();
 	<?php endforeach ?>
 </table>
 
-
-
 <?php  
 if (empty($_GET['ano'])) {
 	exit;
@@ -67,16 +86,11 @@ $data_inicio = date('Y-m-d', strtotime($dia1.' days', strtotime($data)));
 $data_fim = date('Y-m-d', strtotime(( ($dia1 + ($linhas * 7) - 1) ).' days', strtotime($data)));
 
 $list = $reservs->getReservs($data_inicio, $data_fim);
-
-/*foreach ($list as $item) {
-	$data_inicio = date('d/m/Y', strtotime($item['data_inicio']));
-	$data_fim = date('d/m/Y', strtotime($item['data_fim']));
-
-	echo $item['pessoa'].' reservou o carro '.$item['id_carro'].' entre '.$data_inicio.' e '.$data_fim.'<br>';
-}*/
 ?>
 
 
 <?php 
-	require 'calendario.php' 
+	require 'calendario.php';
 ?>
+
+</div>

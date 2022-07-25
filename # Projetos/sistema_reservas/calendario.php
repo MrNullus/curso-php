@@ -1,10 +1,3 @@
-<style>
-	th { background: #AE1BFA; border-radius: 4px; color: #fff; }
-	td { padding: 1.2rem 1rem; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); border-radius: 4px; }
-	.one-day { color: #121212; font-weight: 600; }
-	.td__one-day { background: #f1f1f1; }
-	.td_common-day { background: #fcfbfb;  }
-</style>
 <?php  
 $week_days = array(
 	"Dom","Seg","Ter","Qua","Qui","Sex","Sab"
