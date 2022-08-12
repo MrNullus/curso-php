@@ -7,6 +7,7 @@ session_start();
 require 'config.php';
 
 if (!empty($_POST['email'])) {
+
 	$email = addslashes($_POST['email']);
 	$senha = addslashes(md5($_POST['senha']));
 
@@ -16,13 +17,17 @@ if (!empty($_POST['email'])) {
 	$sql->execute();
 
 	if ($sql->rowCount() > 0) {
+
 		$sql = $sql->fetch();
 		$_SESSION['mmnlogin'] = $sql['id'];
 
 		header("Location: index.php");
 		exit;
+
 	} else {
+
 		echo "Email e/ou Senha incorretos";
+
 	}
 }
 
@@ -32,6 +37,7 @@ if (!empty($_POST['email'])) {
 
 <br><br>
 
+<center>
 <form method="POST">
 	
 	<label for="email">Email</label><br><br>
@@ -45,3 +51,11 @@ if (!empty($_POST['email'])) {
 	<button type="submit">Entrar</button>
 
 </form>
+
+Ou
+
+<a href="cadastro.php">
+	Cadastrar
+</a>
+
+<center>
