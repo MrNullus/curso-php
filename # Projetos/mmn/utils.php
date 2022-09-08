@@ -37,7 +37,7 @@ function exibir($array) {
 	foreach ($array as $usuario) {
 		echo '<li>';
 
-		echo $usuario['nome'] .'('.count($usuario['filhos']).' cadastros diretos)';
+		echo $usuario['nome'] .'('.count($usuario['filhos']).' cadastros direto)';
 		if (count($usuario['filhos']) > 1) {
 			exibir($usuario['filhos']);
 		} 
